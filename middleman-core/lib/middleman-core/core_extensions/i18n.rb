@@ -84,7 +84,7 @@ class Middleman::CoreExtensions::Internationalization < ::Middleman::Extension
 
       href = super(path_or_resource, opts)
 
-      result = extensions[:i18n].localized_path(href, locale)
+      result = extensions[:i18n].localized_path(path_or_resource, locale)
 
       final_path = result || href
 
